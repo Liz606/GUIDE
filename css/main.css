@@ -1,0 +1,172 @@
+/* Created by Liz*/
+
+
+/*初始化*/
+
+html, body, p, h1, h2, h3, h4, a, hr, pre, ul, ol, li, a {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    overflow: hidden;
+    overflow-y: auto;
+}
+body, html {
+    height: 100%;
+    width: 100%;
+    font:12px 'Arial','Microsoft YaHei','tahoma','Hiragino Sans GB','\5b8b\4f53','sans-serif';
+}
+a, a:visited, a:focus, a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+.loadcm{
+    text-align: center;
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+.loadTitle{
+    font-size: 24px;
+}
+.loadSmall{
+    padding: 10px;
+    font-size: 12px;
+}
+.loadBrands{
+    margin: 60px auto;
+}
+.loadBrands li{
+    width: 200px;
+    border-radius: 100%;
+    height: 200px;
+    margin: 0 50px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding:2px;
+}
+.loadBrands li:nth-child(1){
+    background-image:url(../images/spritesheet.jpg);
+}
+.loadBrands li:nth-child(2){
+    background-image:url(../images/spritesheet.jpg);
+}
+.loadBrands li:nth-child(3){
+    background-image:url(../images/spritesheet.jpg);
+}
+.loadBrands li:nth-child(4){
+    background-image:url(../images/spritesheet.jpg);
+}
+.loadBrands li{
+    -webkit-animation: bgAnimate 2s infinite;
+    -o-animation: bgAnimate 2s infinite;
+    animation: bgAnimate 2s infinite;
+}
+@keyframes bgAnimate {
+  0% {
+    background-position: 0 0;
+  }
+  10% {
+    background-position:10% 0;
+  }
+  20% {
+    background-position:20% 0;
+  }
+  30% {
+    background-position:30% 0;
+  }
+  40% {
+    background-position:40% 0;
+  }
+  50% {
+    background-position:50% 0;
+  }
+  60% {
+    background-position:60% 0;
+  }
+  70% {
+    background-position:70% 0;
+  }
+  80% {
+    background-position:80% 0;
+  }
+  90% {
+    background-position:90% 0;
+  }
+  100% {
+    background-position:100% 0;
+  }
+}
+.loadBrands li a{
+    background: #ffffff;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    border-radius: 100%;
+    border: 5px solid transparent;
+}
+.loadBrands li a>.perductLogo{
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.loadBrands li:nth-child(1) a>div{
+    background-image: url(../images/mianlogo1.png);
+}
+.loadBrands li:nth-child(2) a>div{
+    background-image: url(../images/mianlogo2.png);
+}
+.loadBrands li:nth-child(3) a>div{
+    background-image: url(../images/mianlogo3.png);
+}
+.loadBrands li:nth-child(4) a>div{
+    background-image: url(../images/mianlogo4.png);
+}
+
+.loadBrands li:nth-child(1):hover a>div{
+    background-image: url(../images/mianlogo1On.png);
+}
+.loadBrands li:nth-child(2):hover a>div{
+    background-image: url(../images/mianlogo2On.png);
+}
+.loadBrands li:nth-child(3):hover a>div{
+    background-image: url(../images/mianlogo3On.png);
+}
+.loadBrands li:nth-child(4):hover a>div{
+    background-image: url(../images/mianlogo4On.png);
+}
+
+.loadBrands li a:hover{
+    background: transparent;
+}
+.mpage .anitOut {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+.mpage{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
